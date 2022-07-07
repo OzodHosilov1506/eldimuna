@@ -1,0 +1,30 @@
+/*===========================================Overwiev======================================================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*=========================================Header section===================================================*/
+
+.header-top {
+	background-color: #303030;
+}
+
+.header-btn	{
+	background-color: #ffc222;
+	line-height: 36px;
+}
+
+.header-phone,
+.header-email {
+	font-family: serif;
+	line-height: 36px;
+	color: #fff;
+}

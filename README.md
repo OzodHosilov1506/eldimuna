@@ -1,2 +1,2 @@
 # eldimuna
-Wedding house
+Wedding home
