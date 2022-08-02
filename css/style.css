@@ -21,7 +21,10 @@ a{
     color: #003eff;
 }
 
-.brand
+.brand {
+    height: 100px;
+    width: 100px;
+}
 
 .elegant{
     font-family: "Luxurious Script";
@@ -31,7 +34,7 @@ a{
 /*===========================header section============================*/
 .header{
     position: relative;
-    min-height: 400px;
+    min-height: 100px;
     background-color: blueviolet;
 }
 
@@ -44,7 +47,7 @@ a{
 .header-logo{
     position: absolute;
     left:43%;
-    bottom: 15%;
+    bottom: 0%;
 }
 
 .menu{
