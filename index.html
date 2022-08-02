@@ -3,44 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Wedding house "El DiMuNa"</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
-    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
-    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick.scss">
-    <script src="js/main.js"></script>
-    <script src="slick-1.8.1/slick/slick.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
-    <script src="jquery-ui-1.13.1/external/jquery/jquery.js"></script>
 </head>
 <body>
+    <section class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-content-inner">
+                     <div class="header-left my-4">
+                        <form action="form.php" method="get">
+                            <input type="search" name="keyword" id="keyword" class="form-group">
+                            <button type="submit" class="btn-outline-primary">Search</button>
+                         </form>
+                    </div>
+                    <div class="header-logo">
+                        <!-- <a href="#"><p class="brand-name">{"El DiMuNa"}</p></a> -->
+                        <a href="#"><img src="img/El DiMuNa.png" alt="" class="img-fluid rounded-circle brand"></a>
+                    </div>
+                    <div class="menu">
+                        <ul class="nav-menu">
+                            <li id="extra-menu" ondblclick="ExtraMenu()"><a href="#">Home</a></li>
+                            <li id="about" ondblclick="about()"><a href="#">About us</a></li>
+                            <li id="services" ondblclick="navbar()"><a href="#">Services</a></li>
+                            <li id="contacts" ondblclick="navbar()"><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="banner">
+        <container>
 
-<section class="header">
-    <div class="header-content">
-        <a href="#"><h3 class="brand-name"> "El DiMuNa" </h3></a>
-    </div>
-    <div class="header-center">
-        <img src="img/image1.png" alt="">
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </div>
-</section>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/1wedding.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/2wedding.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Wedding-fon.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
+        </container>
+    </section>
 
+    <section id="infobar" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>About our company</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore quod ab aliquid 
+                        exercitationem. Quo veniam distinctio ipsa beatae eveniet qui, et maxime culpa suscipit
+                        soluta nihil deserunt hic voluptatum non eos animi nisi. Totam corporis iusto, nobis dolores,
+                        alias iste dolorem tempora maxime quaerat officiis assumenda eligendi distinctio! Consectetur
+                        maxime maiores, ab voluptas provident unde nihil debitis quo, tenetur eos cupiditate 
+                        adipisci eum aliquam nemo dolor. Minus sed ex consectetur saepe in optio corporis. Officia 
+                        velit perspiciatis sint molestiae ipsa culpa quo blanditiis alias eius exercitationem est 
+                        eos perferendis, aliquam architecto esse consectetur repellendus et maxime quae pariatur 
+                        explicabo deserunt ea! Ipsam est quidem voluptas cupiditate ex officiis a laboriosam autem 
+                        tempora voluptatem, nulla officia harum, suscipit laborum, illum esse praesentium neque 
+                        repellat aliquam quod reprehenderit? Impedit inventore dolorem porro veritatis perferendis 
+                        deserunt laborum, ad cumque, reprehenderit, illo non. Ab eaque alias perferendis omnis quae,
+                        voluptas debitis reiciendis blanditiis ipsa nulla vel at tempore accusamus! Libero aliquam,
+                        nisi vero non quam quidem necessitatibus atque pariatur, dolore accusantium quibusdam, 
+                        voluptates facere sequi! Eum ducimus eveniet libero deleniti facere ipsam repellendus 
+                        pariatur nihil accusamus quod ex, illo rem, laboriosam mollitia aliquid.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/El DiMuNa.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <section class="carousel">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="slider">
+                        <div class="slider-content">
+                            <img src="img/2MDnew1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <img src="img/2MDnew2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <img src="img/2MDnew3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="slider">
+                        <div class="slider-content">
+                            <img src="img/IFnew1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <img src="img/IFnew2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <img src="img/IFnew3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="slider">
+                      <div class="slider-content">
+                         <img src="img/MZnew1.jpg" alt="" class="img-fluid">
+                      </div>
+                      <div class="slider-content">
+                        <img src="img/MZnew2.jpg" alt="" class="img-fluid">
+                      </div>
+                      <div class="slider-content">
+                        <img src="img/MZnew3.jpg" alt="" class="img-fluid">
+                      </div>
+                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+   
+    
+   
 </body>
 
-</html>'
+<script src="bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.js"></script>
+<script src="bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+</html>

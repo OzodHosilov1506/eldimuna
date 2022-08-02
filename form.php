@@ -1,3 +1,4 @@
 <?php
-    echo "hello world";
+    $keyword = $_GET["keyword"];
+    echo ($keyword);
 ?>

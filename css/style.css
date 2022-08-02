@@ -15,6 +15,71 @@ a{
     display: inline-block;
 }
 
+.brand-name{
+    font-family: "Luxurious Script";
+    font-size: 40px;
+    color: #003eff;
+}
+
+.brand
+
+.elegant{
+    font-family: "Luxurious Script";
+    font-size: 20px;
+}
+
+/*===========================header section============================*/
+.header{
+    position: relative;
+    min-height: 400px;
+    background-color: blueviolet;
+}
+
+.header-content{
+	max-height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo{
+    position: absolute;
+    left:43%;
+    bottom: 15%;
+}
+
+.menu{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.nav-menu a{
+    text-decoration: none;
+}
+
+.nav-menu li{
+     display: inline-block;
+}
+
+.nav-menu:hover{
+    border: 1px dashed purple;
+}
+
+.nav-menu li:hover{
+    border: 1px solid #003eff;
+}
+
+.service-panel li{
+    display: block;
+    color: azure;;
+}
+
+/* =======================Banner section====================== */
+
+
+
+
+
 
 /*===========================================Hex, colors warehouse=======================================*/
 
