@@ -8,8 +8,13 @@ $(document).ready(function(){
     slidesToScroll: 3,
     speed: 500,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    nextArrow: "<button type='button' class='slick-btn slick-next'>next</button>",
+    prevArrow: "<button type='button' class='slick-btn slick-prev'>prev</button>"
   });
 });
+
+// $(ducument).slick({
+// })
 
 

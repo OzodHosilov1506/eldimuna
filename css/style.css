@@ -79,10 +79,52 @@ a{
 
 /* =======================Banner section====================== */
 
+#banner{
+    min-height: 500px;
+}
 
+/*===============================Darkline section==================================*/
 
+#darkline {
+	background-image: url(../img/wedding-fon2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 300px;
+	position: relative;
+}
 
+.overline {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .6);
+}
 
+/*============================Slider-box section================================*/
+.slider-item{
+    position: relative;
+}
+ .slick-btn{
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid red;
+    background-color: #003eff;
+ }
+
+ .slick-next{
+    right: 0;
+ }
+
+ .slick-prev{
+    left: 0;
+ }
 
 /*===========================================Hex, colors warehouse=======================================*/
 
