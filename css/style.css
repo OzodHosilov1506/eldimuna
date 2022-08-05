@@ -106,25 +106,93 @@ a{
 .slider-item{
     position: relative;
 }
- .slick-btn{
+.slick-btn{
     position: absolute;
     top: 50%;
     z-index: 3;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     outline: none;
-    border: 1px solid red;
-    background-color: #003eff;
+    border: 1px solid indianred;
+    border-radius: 50%;
+    background-color: transparent;
+    
  }
 
- .slick-next{
+ .slick-btn:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: #000;
+    font-family: 'fontawesome';
+ }
+
+.slick-btn:hover,
+.slick-disaled{
+    cursor: default;
+    background-color: #da9ded;
+ }
+
+.slick-next{
     right: 0;
  }
 
- .slick-prev{
+.slick-prev{
     left: 0;
  }
+
+.slick-next:before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+ }
+
+.slick-prev:before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+ }
+
+.slider.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider.slick-dots li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+.slider.slick-dots button{
+    font-size: 0;
+    z-index: 3;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/*===============================Darktape section==================================*/
+
+#line {
+	background-image: url(../img/1wedding-house.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 300px;
+	position: relative;
+}
+
+.blackline {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .6);
+}
 
 /*===========================================Hex, colors warehouse=======================================*/
 
