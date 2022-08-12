@@ -1,4 +1,4 @@
-/*==========================Overwiev====================================*/
+/*==========================Overwiev====================================*/ 
 body{
     margin: 0;
     padding: 0;
@@ -29,14 +29,14 @@ a{
 
 .elegant{
     font-family: "Luxurious Script";
-    font-size: 20px;
+    font-size: 60px;
 }
 
 /*===========================header section============================*/
 .header{
     position: relative;
     min-height: 100px;
-    background-color: blueviolet;
+    background-color: #590b31;;
 }
 
 .header-content{
@@ -86,7 +86,7 @@ a{
 /* =======================Banner section====================== */
 
 #banner{
-    min-height: 500px;
+    height: 500px;
 }
 
 /*===============================Darkline section==================================*/
@@ -198,6 +198,32 @@ a{
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .6);
+}
+
+/* ============================Footer section=============================== */
+
+.footer{
+    position: relative;
+    height: 400px;
+    background-color: #590b31;
+    color: azure;
+}
+
+.footer li{
+    color: azure;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer-bottom{
+    position: absolute;
+    top: 85%;
+    left: 35%;
+}
+
+.footer-text{
+    font-family: san-serif;
+    font-size: 20px;
 }
 
 /*===========================================Hex, colors warehouse=======================================*/
